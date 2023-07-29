@@ -15,8 +15,7 @@ app.use(express.json())
 app.use('/books' , router)
 
 
-
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI || "mongodb+srv://Caldee:nelly4lyf@atlascluster.3o96uyy.mongodb.net/?retryWrites=true&w=majority" )
     .then(() => {
     //listen for requests
     app.listen(PORT ,() => {
