@@ -9,11 +9,11 @@ const bookSchema = new Schema({
   },
   author: {
     type: String,
-    required: true,
+    required: false,
   },
   description: {
     type: String,
-    required: false
+    required: true
   },
   price: {
     type: Number,
